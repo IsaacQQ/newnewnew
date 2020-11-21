@@ -4,8 +4,8 @@ import telebot
 import json
 
 
-#TOKEN = os.environ.get('TOKEN')
-#bot = telebot.TeleBot(TOKEN)
+TOKEN = os.environ.get('TOKEN')
+bot = telebot.TeleBot(TOKEN)
 
 TOKEN = '1432118716:AAE-_JYwCRoGr8zAQbkr2i3vLpdHQZIzGqk'
 bot = telebot.TeleBot(TOKEN)
