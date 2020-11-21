@@ -4,7 +4,7 @@ import telebot
 import json
 
 
-TOKEN = os.environ.get('TOKEN')
+TOKEN = os.environ.get('Key')
 bot = telebot.TeleBot(TOKEN)
 
 server = Flask(__name__)
