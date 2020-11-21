@@ -51,14 +51,14 @@ def echo_message_planning(message):
 @server.route('/' + TOKEN, methods=['POST'])
 def getMessage():
     bot.process_new_updates([telebot.types.Update.de_json(request.stream.read().decode("utf-8"))])
-    return "Python Telegram Bot 21-11-2020", 200
+    return "telegrambotpython", 200
 
 
 @server.route("/")
 def webhook():
     bot.remove_webhook()
     bot.set_webhook(url='https://test-bot-21-11-2020.herokuapp.com/' + TOKEN)
-    return "Python Telegram Bot 21-11-2020", 200
+    return "telegrambotpython", 200
 
 
 if __name__ == "__main__":
